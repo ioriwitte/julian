@@ -5,7 +5,7 @@
 Framer.Defaults.Animation.time = 0.3
 
 new BackgroundLayer
-	backgroundColor: "black"
+	backgroundColor: "white"
 	
 # Put file names of hearts in array	
 hearts = [
@@ -20,13 +20,14 @@ hearts = [
 # Video courtesy of the Earth Science and Remote Sensing Unit, NASA Johnson Space Center
 # http://eol.jsc.nasa.gov/
 videoLayer = new VideoLayer 
-	x:0
-	y:230
+	x:-600
+	y:100
 	width:1624
-	height:1080 
+	height:800 
 	video:"images/ffc-space.mp4"
 videoLayer.player.loop = true
 videoLayer.player.play()
+
 
 # Make entire screen a button
 hitTarget = new Layer
@@ -39,6 +40,7 @@ playPauseBtn = new Layer
 	x: 642
 	y: 1200
 	backgroundColor: "transparent"	
+ 
 	
 inputLabel = new Layer
 	x: 20
@@ -47,13 +49,13 @@ inputLabel = new Layer
 	width: 610
 	borderRadius: "10px"
 	backgroundColor: "rgba(255, 255, 255, 0.24)"
-inputLabel.html = "Say something..."
+inputLabel.html = " To speed up the show click anywhere ..."
 inputLabel.style = 
 	"color": "#999999"
 	"font-size": "30px"
 	"padding-top": "24px"
 	"padding-left": "24px"
-		
+
 # Set variables
 lineWidth = 10
 lineHeight = 50
@@ -62,22 +64,23 @@ firstLine = new Layer
 	width: lineWidth
 	height: lineHeight
 	x:35
-	backgroundColor:'#ffffff'
+	backgroundColor:"rgba(255, 0, 0)"
 	borderRadius:'3px'
 secondLine = new Layer
 	width: lineWidth
 	height: lineHeight
 	x:55 
-	backgroundColor:'#ffffff'
+	backgroundColor:"rgba(255, 0, 0)"
 	borderRadius:'3px'
 thirdLine = new Layer
 	width: lineWidth
 	height: lineHeight
 	x:75
-	backgroundColor:'#ffffff'
+	backgroundColor:"rgba(255, 0, 0)"
 	borderRadius:'3px'
 	opacity: 0
 	rotation: 60
+
 	
 playPauseBtn.addSubLayer(firstLine)
 playPauseBtn.addSubLayer(secondLine)
