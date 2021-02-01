@@ -1,6 +1,6 @@
 # Prototying with Framer
-# by Kenny Chen
-# Random Hearts
+# by Jori Witte, based on Code Example from Kenny Chen
+# Hearts for Julian
 
 Framer.Defaults.Animation.time = 0.3
 
